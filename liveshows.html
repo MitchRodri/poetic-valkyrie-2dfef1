@@ -10,8 +10,9 @@
 
 <header>
     <h1>Redeemed</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    <nav>
+    <nav class="desktop-nav" id="mobile-menu">
         <a href="index.html">Home</a>
         <a href="index.html#music">Music</a>
         <a href="index.html#merch">Merch</a>
@@ -44,12 +45,19 @@
 <footer>
     <div class="page-nav-links">
         <a href="index.html">Home</a>
-        <a href="music.html">Music</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html#music">Music</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
     </div>
     <p>© 2026 Redeemed</p>
 </footer>
-
+<script>
+function toggleMenu() {
+    document.getElementById("mobile-menu").classList.toggle("active");
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</script>
 </body>
 </html>
