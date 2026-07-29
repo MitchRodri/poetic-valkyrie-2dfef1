@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "OldEnglish Five";
+    font-family: "Old English Five";
     src: url("fonts/OldEnglishFive.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -85,7 +85,7 @@ header {
 }
 
 h1 {
-    font-family: Old English Five, serif;
+    font-family: "Old English Five", serif;
     font-size: 72px;
     letter-spacing: 5px;
 }
