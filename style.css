@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: conic-gradient(from 180deg at 50% 50%, #0b0b0b 0deg, #2a0f1d 180deg, #4a1c0f 270deg, #0b0b0b 360deg);
+    background: linear-gradient(36deg, #2a0f1d 0%, #030303 100%);
     color: #f5e7b2;
 }
 
