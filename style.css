@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "OldEnglish Five";
+    src: url("fonts/OldEnglishFive.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     scroll-behavior: smooth;
     background-color: #0b0b0b;
@@ -77,7 +85,7 @@ header {
 }
 
 h1 {
-    font-family: Georgia, serif;
+    font-family: "Old English Five", serif;
     font-size: 72px;
     letter-spacing: 5px;
 }
