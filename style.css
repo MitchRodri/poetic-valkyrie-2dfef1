@@ -966,6 +966,13 @@ button {
         transform: translateY(+30px);
     }
 
+    .music-link-button:hover {
+        background-color: #030303;
+        color: #d8b15d;
+        transform: scale(1.10);
+        transform: translateY(+30px);
+    }
+
     h1 {
         font-size: 1.8rem;
     }
