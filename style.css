@@ -415,6 +415,46 @@ button {
 
 /* Band Member Card Styles */
 
+.band-member-card {
+    width: 95%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.band-member-summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.band-member-info {
+    min-width: 0;
+}
+
+.band-member-details {
+    display: none;
+    padding-top: 8px;
+    border-top: 1px solid rgba(245, 231, 178, 0.15);
+}
+
+.band-member-card.active .band-member-details {
+    display: block;
+}
+
+.band-member-card:hover,
+.band-member-card:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    outline: none;
+}
 
 .matthew-card {
     width: 95%;
@@ -990,6 +1030,13 @@ button {
     scroll-margin-top: 250px;
 }
 
+.meet-the-band h3{
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -1169,20 +1216,36 @@ button {
         gap: 15px;
     }
 
-    .band-members-grid article {
+    .band-members-grid .band-member-card {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
         text-align: left;
-        gap: 15px;
+        gap: 12px;
         padding: 12px;
+        cursor: pointer;
     }
 
-    .band-members-grid img {
+    .band-members-grid .band-member-summary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .band-members-grid .band-member-card img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
         object-fit: cover;
         flex-shrink: 0;
+    }
+
+    .band-members-grid .band-member-card .band-member-details {
+        display: none;
+    }
+
+    .band-members-grid .band-member-card.active .band-member-details {
+        display: block;
     }
 
     .band-members-grid h4 {
@@ -1207,7 +1270,6 @@ button {
     }
     
 }
-
 
 
 
