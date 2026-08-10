@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
 
             emailjs.sendForm(
-                "service_4dcz4hg",
+                "service_1aqgypn",
                 "template_ipqa1ya",
                 this
             )
