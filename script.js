@@ -30,6 +30,31 @@ if (giveButton && donationBox) {
 //send emails through contact
 document.addEventListener("DOMContentLoaded", function () {
 
+    const memberCards = document.querySelectorAll(".band-member-card");
+
+    if (memberCards.length) {
+        const setActiveCard = (activeCard) => {
+            memberCards.forEach((card) => {
+                const shouldBeActive = card === activeCard;
+                card.classList.toggle("active", shouldBeActive);
+                card.setAttribute("aria-expanded", shouldBeActive ? "true" : "false");
+            });
+        };
+
+        memberCards.forEach((card) => {
+            card.addEventListener("click", () => {
+                setActiveCard(card.classList.contains("active") ? null : card);
+            });
+
+            card.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    setActiveCard(card.classList.contains("active") ? null : card);
+                }
+            });
+        });
+    }
+
     const contactForm = document.getElementById("contact-form");
 
     console.log(contactForm);
@@ -63,4 +88,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-
