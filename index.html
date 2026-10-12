@@ -2,19 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0b0b0b">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-capable" content="yes">
-
+    <meta name="theme-color" content="#0b0b0b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Redeemed</title>
-
-    <!-- Browser tab icon -->
+        <!-- Browser tab icon -->
     <link rel="icon" type="image/png" href="images/redeemedfavicon.jpg">
-
-    <!-- Website styles -->
+    
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header>
+        <a href="#home" class="header-logo-link" aria-label="Redeemed home">
+            <img src="images/redeemedlogo.PNG" alt="Redeemed logo" class="header-logo">
+        </a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="desktop-nav" id="mobile-menu">
+            <a href="#merch">Merch</a>
+            <a href="#music">Music</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contact</a>
+            <a href="#give" class="give-btn">❤ Give</a>
+        </nav>
+    </header>
 
     <section id="home" class="hero">
         <video autoplay muted loop playsinline class="hero-video">
